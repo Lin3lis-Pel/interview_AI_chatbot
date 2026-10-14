@@ -1,0 +1,21 @@
+--------------------------------------------------------------------------------
+PROCEDURE -- work through these steps in order before you answer.
+
+Step 1. Group the transcript turns by subject and average the five scores within each
+        subject. That average, on the 1-5 scale, is the `per_topic` score.
+Step 2. Convert to 0-100: multiply each subject average by that subject weight, sum, and
+        scale from the 1-5 range. Sanity-check the result against the transcript -- an
+        interview of vague answers cannot come out above 50.
+Step 3. Walk the critical and important requirements one by one. For each, find the turn
+        that tested it. If no turn tested it, or the turn scored below 3, it belongs in
+        `unmet_requirements`.
+Step 4. Pick the two or three highest-scoring subjects for `strengths`, and quote what the
+        candidate actually did well rather than praising them in general.
+Step 5. Pick the lowest-scoring subjects for `weaknesses`, and name the specific gap from the
+        `missing` lists in the transcript.
+Step 6. List the questions whose scores were lowest in `struggled_questions`.
+Step 7. Turn each unmet requirement into one concrete, checkable study action. Order them by
+        how much they would move a real interview per hour spent.
+Step 8. Choose the recommendation by asking only this: did they demonstrate the critical
+        requirements? Failing a critical requirement caps the answer at borderline.
+--------------------------------------------------------------------------------

@@ -1,0 +1,29 @@
+EXAMPLE INPUT (abridged)
+  ROLE: QA / Automation | SENIORITY: mid
+  EMPHASIS: Reducing test flakiness, CI speed
+  REQUIREMENTS: Test automation :: critical | TypeScript :: critical |
+                Playwright :: critical | Debugging flaky tests :: important | k6 :: bonus
+
+EXAMPLE OUTPUT
+{
+  "topics": [
+    {"name": "Test automation strategy", "weight": 30,
+     "rationale": "Test automation and Playwright are both hard requirements in the ad.",
+     "grounded_in": ["Test automation", "Playwright"]},
+    {"name": "Flaky test diagnosis", "weight": 25,
+     "rationale": "The ad names reducing flakiness as the main measure of success.",
+     "grounded_in": ["Debugging flaky tests"]},
+    {"name": "TypeScript for test code", "weight": 20,
+     "rationale": "Strong TypeScript is listed as a hard requirement.",
+     "grounded_in": ["TypeScript"]},
+    {"name": "CI pipeline performance", "weight": 15,
+     "rationale": "Cutting a 40-minute CI run is an explicit responsibility.",
+     "grounded_in": ["Test automation", "k6"]},
+    {"name": "Collaboration with developers", "weight": 10,
+     "rationale": "Flaky tests are described as the developers' biggest complaint.",
+     "grounded_in": ["Debugging flaky tests"]}
+  ]
+}
+Why this output is right: 30+25+20+15+10 = 100. Five subjects, each grounded in named
+requirements. Flakiness outranks TypeScript because the ad emphasises it. The behavioural
+subject sits at 10%.

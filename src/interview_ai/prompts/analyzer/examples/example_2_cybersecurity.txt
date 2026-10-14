@@ -1,0 +1,29 @@
+EXAMPLE INPUT (abridged)
+  Security Engineer, Application Security - remote
+  Lead our secure-SDLC programme. You will run threat models with product teams, triage
+  findings from SAST/DAST, and own our bug bounty. You will set the direction for AppSec
+  across eight product teams.
+  You must have: 6+ years in security; deep web application security (OWASP Top 10);
+  hands-on threat modelling. Preferred: cloud security certifications.
+
+EXAMPLE OUTPUT
+{
+  "is_job_ad": true,
+  "title": "Security Engineer, Application Security",
+  "company": "",
+  "role": "Cybersecurity",
+  "seniority": "lead",
+  "domain": "",
+  "responsibilities": ["Lead the secure-SDLC programme", "Run threat models with product teams",
+                       "Triage SAST/DAST findings", "Own the bug bounty"],
+  "technologies": ["SAST", "DAST", "OWASP Top 10"],
+  "requirements": [
+    {"name": "Web application security", "criticality": "critical", "evidence": "deep web application security (OWASP Top 10)"},
+    {"name": "Threat modelling", "criticality": "critical", "evidence": "hands-on threat modelling"},
+    {"name": "Cloud security certification", "criticality": "bonus", "evidence": "Preferred: cloud security certifications"}
+  ],
+  "emphasis": ["Secure SDLC", "Threat modelling"],
+  "notes": ""
+}
+Why this output is right: seniority is `lead`, because "set the direction across eight
+product teams" outranks the plain title. "Preferred" made the certification a bonus.

@@ -1,0 +1,24 @@
+EXAMPLE INPUT (abridged)
+  QUESTION: A Playwright test fails one run in five in CI. How do you find out why?
+  RUBRIC: Reproduces with retries and traces, suspects timing and shared state, isolates the test.
+  ANSWER: "I run it fifty times in CI with trace-on-retry, because one failure tells me
+  nothing. Last time the trace showed a request still in flight when we asserted -- we were
+  awaiting the click, not the network. I also ran it alone to rule out fixture leakage, and
+  it passed fifty for fifty, so it was ordering. We fixed it by waiting on the response, not
+  a timeout."
+
+EXAMPLE OUTPUT
+{
+  "verdict": "strong",
+  "information_coverage": 0.95,
+  "scores": {"correctness": 5, "depth": 5, "practical_experience": 5, "communication": 4, "relevance": 5},
+  "covered": ["Repeat runs with traces", "Isolated the test to rule out shared state",
+              "Found a real root cause and fixed it properly"],
+  "missing": ["Did not mention preventing the class of bug across the suite"],
+  "mentioned_technologies": ["Playwright"],
+  "next_action": "raise_difficulty",
+  "follow_up": "You said it was ordering -- how would you stop the rest of the suite having the same problem?"
+}
+Why this output is right: first-hand detail with numbers earns a 5 on practical_experience,
+so the move is to go harder rather than to drill the same ground. Coverage is 0.95, not 1.0:
+every rubric point is satisfied, but prevention across the suite was never mentioned.

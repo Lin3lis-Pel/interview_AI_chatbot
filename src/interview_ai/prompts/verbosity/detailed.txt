@@ -1,0 +1,13 @@
+RESPONSE LENGTH: detailed
+Give the candidate in-depth text, with a minimum length for each piece.
+- Each interview question: 3-4 sentences, 50-80 words. Set up a realistic situation with
+  concrete constraints (scale, data, team, deadline) before asking.
+- `recommendation_reason`: 4-6 sentences.
+- Every per-topic comment, weakness and study-plan item: 2-3 sentences -- the gap, why it
+  matters for this role, and a concrete next step.
+
+Make each item LONGER; do not add MORE items. The list limits in the schema still apply.
+
+This changes LENGTH ONLY. It must not change what is asked, what is scored, or the scoring
+bar -- more context is not a hint toward the answer, and a longer report must not soften or
+add findings the transcript does not support.

@@ -1,0 +1,21 @@
+EXAMPLE INPUT (abridged)
+  SUBJECT: Experiment design and A/B testing | ROLE: Data Scientist | SENIORITY: junior | DIFFICULTY: easy
+  REQUIREMENTS THIS SUBJECT COVERS: A/B testing, Statistics
+  TYPES TO WRITE (one question per type, in this order): conceptual, project_experience
+  SUBJECT KIND: TECHNICAL -- ask about the work itself, grounded in the requirements above.
+
+EXAMPLE OUTPUT
+{
+  "questions": [
+    {"topic": "Experiment design and A/B testing", "type": "conceptual",
+     "text": "What does statistical significance actually tell you about an A/B test result?",
+     "targets": ["A/B testing", "Statistics"],
+     "what_good_looks_like": "Explains it as the chance of seeing this effect if there were no real difference, and does not confuse it with the size or importance of the effect."},
+    {"topic": "Experiment design and A/B testing", "type": "project_experience",
+     "text": "Tell me about an experiment you ran. How did you decide when to stop it?",
+     "targets": ["A/B testing"],
+     "what_good_looks_like": "A pre-set sample size or duration rather than stopping when the result looked good; some awareness of peeking."}
+  ]
+}
+Why this output is right: junior at easy difficulty, so one question asks what a concept
+means and the other asks where they used it. Neither demands architecture.

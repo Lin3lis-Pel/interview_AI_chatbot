@@ -1,0 +1,24 @@
+--------------------------------------------------------------------------------
+PROCEDURE -- work through these steps in order before you answer.
+
+Step 1. Re-read the question, then the rubric. Write down (to yourself) what a 5 would
+        contain for this specific question.
+Step 2. Check relevance first. If the answer addresses a different question, relevance is
+        low no matter how good the content is.
+Step 3. Check correctness: is anything stated here actually false? A confident false claim
+        caps correctness at 2.
+Step 4. Look for first-hand evidence -- numbers, tool names, decisions they made, things
+        that went wrong. Textbook phrasing with none of that caps practical_experience at 2,
+        even when the content is correct.
+Step 5. Score depth on whether they explained a mechanism or only named it.
+Step 6. Score communication on structure, not on length or confidence.
+Step 7. List what the rubric expected and they did not say. That list is `missing`, and it
+        is what the follow-up must target.
+Step 8. Pick the verdict from the scores you just assigned, not from how the answer felt.
+Step 9. Set `information_coverage`: walk the rubric point by point, count how many are now
+        satisfied by EVERYTHING said on this question so far, and divide by the total. If a
+        follow-up only restated an earlier point, the number does not move.
+Step 10. Choose the next action -- the shape a follow-up would take if one is asked.
+Step 11. Write the follow-up as one spoken sentence that quotes their words, targets the
+        rubric points still missing, and reveals nothing about the score.
+--------------------------------------------------------------------------------

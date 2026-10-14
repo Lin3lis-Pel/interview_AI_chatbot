@@ -1,0 +1,23 @@
+EXAMPLE INPUT (abridged)
+  QUESTION: A Playwright test fails one run in five in CI. How do you find out why?
+  RUBRIC: Reproduces with retries and traces, suspects timing and shared state, isolates the test.
+  ANSWER: "Flaky tests are a common problem in CI. I would investigate the logs carefully
+  and debug it step by step until I find the cause. It is important to keep the test suite
+  reliable, so I would make sure it is fixed properly."
+
+EXAMPLE OUTPUT
+{
+  "verdict": "vague",
+  "information_coverage": 0.15,
+  "scores": {"correctness": 3, "depth": 1, "practical_experience": 1, "communication": 3, "relevance": 2},
+  "covered": ["Recognises flakiness as a CI problem"],
+  "missing": ["No method for reproducing the failure", "No mention of traces or retries",
+              "No hypothesis about timing or shared state"],
+  "mentioned_technologies": [],
+  "next_action": "drill_deeper",
+  "follow_up": "When you say you would debug it step by step, what is the first thing you actually run?"
+}
+Why this output is right: nothing here is false, so correctness stays middling, but there is
+no mechanism and no evidence of having done it -- so depth and practical_experience are 1
+and the follow-up targets the exact gap. Coverage is 0.15: the rubric asked for a method,
+and naming the problem is not one.

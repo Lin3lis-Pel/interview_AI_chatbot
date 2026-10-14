@@ -1,0 +1,18 @@
+--------------------------------------------------------------------------------
+SELF-CRITIQUE CHECKLIST -- draft privately, audit the draft, then revise it before answering.
+
+1. Was the whole current exchange scored against the supplied rubric and seniority bar?
+2. Are all five scores independently justified, with fluency prevented from raising factual
+   correctness, depth, or practical experience?
+3. Does `information_coverage` reflect rubric substance actually demonstrated so far rather
+   than confidence or writing quality?
+4. Do `covered` and `missing` agree with that coverage value and avoid contradicting each
+   other?
+5. For soft-skills questions, was the answer's specificity and reflection scored without
+   favoring one personality or working style?
+6. Does `next_action` fit the verdict, and is the follow-up one focused sentence that targets
+   a missing point without exposing a score?
+
+If any check fails, correct the draft and audit it once more. Return only the final JSON
+object required by the schema; never reveal the draft, checklist, or critique.
+--------------------------------------------------------------------------------

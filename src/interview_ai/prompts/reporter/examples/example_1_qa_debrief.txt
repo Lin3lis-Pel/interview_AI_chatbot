@@ -1,0 +1,37 @@
+EXAMPLE INPUT (abridged)
+  JOB: QA Automation Engineer | ROLE: QA / Automation | SENIORITY: mid
+  CRITICAL / IMPORTANT: Test automation (critical), TypeScript (critical), Playwright (critical),
+                        Debugging flaky tests (important)
+  PLAN: Test automation strategy :: 30% | Flaky test diagnosis :: 25% | TypeScript :: 20% |
+        CI pipeline performance :: 15% | Collaboration :: 10%
+  TRANSCRIPT: strong on flaky-test diagnosis (mean 4.8); vague on TypeScript, could not explain
+  why a type was wrong (mean 1.8); no answer on CI performance; adequate on collaboration (3.0).
+
+EXAMPLE OUTPUT
+{
+  "overall_score": 48,
+  "recommendation": "borderline",
+  "recommendation_reason": "Your flaky-test debugging is genuinely strong and that is the problem this team is hiring to solve. But TypeScript is a hard requirement in the ad and you could not explain why a type was wrong, which is exactly what the ad asks for.",
+  "per_topic": [
+    {"topic": "Test automation strategy", "score": 3.4, "comment": "Solid on structure, thin on choosing what not to automate."},
+    {"topic": "Flaky test diagnosis", "score": 4.8, "comment": "Your best subject. Real root causes, real numbers."},
+    {"topic": "TypeScript for test code", "score": 1.8, "comment": "You silenced type errors rather than explaining them."},
+    {"topic": "CI pipeline performance", "score": 1.0, "comment": "No answer given."},
+    {"topic": "Collaboration with developers", "score": 3.0, "comment": "Reasonable, but no concrete example."}
+  ],
+  "strengths": ["Diagnosing flaky tests from traces rather than adding retries",
+                "Isolating tests to rule out shared state"],
+  "weaknesses": ["Cannot explain type errors, only suppress them",
+                 "No working knowledge of CI run-time optimisation"],
+  "unmet_requirements": ["TypeScript", "Test automation strategy at scale"],
+  "struggled_questions": ["Why is this type wrong rather than just failing?",
+                          "How would you cut a 40-minute CI run?"],
+  "study_plan": [
+    "Take three type errors from your own repo and write out why each one is correct to fail.",
+    "Time your slowest test suite, shard it across CI workers, and record the before and after.",
+    "Write down what you would deliberately not automate, and why."
+  ]
+}
+Why this output is right: 48 is consistent with two near-zero subjects carrying 35% of the
+weight. A failed critical requirement caps the recommendation at borderline even though one
+subject was excellent. Every study action is checkable.

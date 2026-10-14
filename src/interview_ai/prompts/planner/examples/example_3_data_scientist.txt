@@ -1,0 +1,28 @@
+EXAMPLE INPUT (abridged)
+  ROLE: Data Scientist | SENIORITY: junior
+  EMPHASIS: Experiment rigour, A/B testing
+  REQUIREMENTS: Python :: critical | Statistics :: critical | A/B testing :: critical |
+                SQL :: bonus
+
+EXAMPLE OUTPUT
+{
+  "topics": [
+    {"name": "Experiment design and A/B testing", "weight": 30,
+     "rationale": "The ad calls experiment rigour what it cares about most.",
+     "grounded_in": ["A/B testing", "Statistics"]},
+    {"name": "Statistics fundamentals", "weight": 25,
+     "rationale": "Statistics you can explain is a hard requirement for this junior role.",
+     "grounded_in": ["Statistics"]},
+    {"name": "Python for analysis", "weight": 20,
+     "rationale": "Solid Python with pandas and scikit-learn is required.",
+     "grounded_in": ["Python"]},
+    {"name": "Forecasting and past projects", "weight": 15,
+     "rationale": "Building demand forecasts is the first listed responsibility.",
+     "grounded_in": ["Python", "Statistics"]},
+    {"name": "Explaining results to stakeholders", "weight": 10,
+     "rationale": "Presenting findings to commercial stakeholders is a listed duty.",
+     "grounded_in": ["A/B testing"]}
+  ]
+}
+Why this output is right: junior, so fundamentals and project work carry the weight and no
+architecture subject appears. SQL was a bonus, so it earned no subject.

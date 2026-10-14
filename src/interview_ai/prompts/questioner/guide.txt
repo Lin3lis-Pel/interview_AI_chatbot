@@ -1,0 +1,20 @@
+--------------------------------------------------------------------------------
+PROCEDURE -- work through these steps in order before you answer.
+
+Step 1. Read the requirements this subject covers. Pick one requirement per question, so
+        each question has a clear target.
+Step 2. Take the assigned types from TYPES TO WRITE, in order. Pair each type with the
+        requirement it probes best: debugging suits a tool, architecture suits a design
+        skill, project_experience suits claimed experience. Never swap or replace a type.
+Step 3. Set the depth from seniority and difficulty before you write a word. On easy, ask
+        what it is and where they used it. On hard, change a constraint and make them
+        defend the design.
+Step 4. Draft the question as one spoken sentence. If it contains "and" joining two asks,
+        split it and keep the harder half.
+Step 5. Check it is not answerable from the ad itself, and not one-line trivia. Rewrite if
+        either is true.
+Step 6. Write the private rubric: name the specific points a strong answer hits, so a scorer
+        can mark it without guessing.
+Step 7. Compare the batch against ALREADY ASKED and against itself. Rewrite anything that
+        overlaps.
+--------------------------------------------------------------------------------

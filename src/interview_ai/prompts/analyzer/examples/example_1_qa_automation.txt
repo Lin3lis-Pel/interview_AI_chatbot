@@ -1,0 +1,32 @@
+EXAMPLE INPUT (abridged)
+  QA Automation Engineer - Tallinn
+  You will own our Playwright end-to-end suite and cut a 40-minute CI run down to something
+  developers will actually wait for. Flaky tests are our biggest complaint, and reducing
+  flakiness is the main measure of success in this role.
+  Requirements: 3+ years test automation; strong TypeScript; Playwright or Cypress in
+  production; you can debug a flaky test rather than retry it.
+  Nice to have: performance testing with k6.
+
+EXAMPLE OUTPUT
+{
+  "is_job_ad": true,
+  "title": "QA Automation Engineer",
+  "company": "",
+  "role": "QA / Automation",
+  "seniority": "mid",
+  "domain": "",
+  "responsibilities": ["Own the Playwright end-to-end suite", "Reduce CI run time", "Fix flaky tests"],
+  "technologies": ["Playwright", "TypeScript", "Cypress", "k6"],
+  "requirements": [
+    {"name": "Test automation", "criticality": "critical", "evidence": "3+ years test automation"},
+    {"name": "TypeScript", "criticality": "critical", "evidence": "strong TypeScript"},
+    {"name": "Playwright", "criticality": "critical", "evidence": "Playwright or Cypress in production"},
+    {"name": "Debugging flaky tests", "criticality": "important", "evidence": "debug a flaky test rather than retry it"},
+    {"name": "k6", "criticality": "bonus", "evidence": "Nice to have: performance testing with k6"}
+  ],
+  "emphasis": ["Reducing test flakiness", "CI speed"],
+  "notes": "Company name not stated."
+}
+Why this output is right: `role` came from the responsibilities, not the title. Every
+requirement carries a real quote. "k6" was hedged with "nice to have", so it is bonus.
+Flakiness is named twice, so it leads `emphasis`.

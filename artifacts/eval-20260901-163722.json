@@ -1,0 +1,1885 @@
+{
+  "timestamp": "2026-09-01T14:41:10+00:00",
+  "model": "openai/gpt-5-nano",
+  "reasoning_effort": "low",
+  "prompt_version": "2026-08-31.v7-self-critique",
+  "suites": [
+    "ads",
+    "answers",
+    "security"
+  ],
+  "repeats": 1,
+  "judge": "gemma4:e4b",
+  "judge_strategy": "guided",
+  "max_output_tokens": {
+    "analyzer": 4000,
+    "planner": 5000,
+    "questioner": 4000,
+    "evaluator": 3000,
+    "reporter": 5000
+  },
+  "wall_time_s": 3828.1515939999954,
+  "artifacts": "C:\\Users\\Nitro\\Desktop\\Turing College\\DS\\4th_AI_engineering\\interview_AI\\artifacts\\artifacts-20260901-163722.jsonl",
+  "artifact_records": 210,
+  "arms": [
+    {
+      "strategy": "zero_shot",
+      "wall_time_s": 730.8,
+      "usage": {
+        "calls": 88,
+        "prompt_tokens": 108447,
+        "completion_tokens": 75408,
+        "total_tokens": 183855,
+        "cost_usd": 0.035586,
+        "cost_estimated": true,
+        "p50_latency_s": 6.866,
+        "max_latency_s": 20.615
+      },
+      "metrics": {
+        "adaptive_action_policy": {
+          "mean": 0.833,
+          "n": 6,
+          "min": 0.0
+        },
+        "analysis_exemplar_clean": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "coverage_discrimination": {
+          "mean": 0.75,
+          "n": 1,
+          "min": 0.75
+        },
+        "coverage_matches_verdict": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "criticality_precision": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "difficulty_separation": {
+          "mean": 0.475,
+          "n": 5,
+          "min": 0.25
+        },
+        "emphasis_detected": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "evidence_grounding": {
+          "mean": 1.0,
+          "n": 5,
+          "min": 1.0
+        },
+        "follow_up_style": {
+          "mean": 0.833,
+          "n": 6,
+          "min": 0.0
+        },
+        "judge_score_agreement": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "judge_score_bias": {
+          "mean": -0.2,
+          "n": 6,
+          "min": -1.0
+        },
+        "judge_verdict_agreement": {
+          "mean": 0.583,
+          "n": 6,
+          "min": 0.0
+        },
+        "judged_difficulty_fit": {
+          "mean": 0.792,
+          "n": 4,
+          "min": 0.167
+        },
+        "judged_question_quality": {
+          "mean": 0.708,
+          "n": 4,
+          "min": 0.611
+        },
+        "plan_behavioral_balanced": {
+          "mean": 0.9,
+          "n": 10,
+          "min": 0.0
+        },
+        "plan_exemplar_clean": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "plan_topic_count_ok": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "plan_topic_grounding": {
+          "mean": 0.863,
+          "n": 10,
+          "min": 0.333
+        },
+        "plan_weights_valid": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "question_duplicate_rate": {
+          "mean": 0.0,
+          "n": 10,
+          "min": 0.0
+        },
+        "question_exemplar_clean": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "question_grounding": {
+          "mean": 0.875,
+          "n": 10,
+          "min": 0.5
+        },
+        "question_rubric_present": {
+          "mean": 0.988,
+          "n": 10,
+          "min": 0.875
+        },
+        "question_type_diversity": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "rejects_non_job_ad": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "report_flags_unmet_requirements": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "report_gives_study_plan": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "report_score_matches_answers": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "requirement_recall": {
+          "mean": 0.9,
+          "n": 4,
+          "min": 0.6
+        },
+        "role_accuracy": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "schema_validity": {
+          "mean": 1.0,
+          "n": 25,
+          "min": 1.0
+        },
+        "score_band_accuracy": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "score_discrimination": {
+          "mean": 0.75,
+          "n": 1,
+          "min": 0.75
+        },
+        "security_no_prompt_leak": {
+          "mean": 1.0,
+          "n": 11,
+          "min": 1.0
+        },
+        "security_resisted_ad_injection": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "security_resisted_score_injection": {
+          "mean": 1.0,
+          "n": 3,
+          "min": 1.0
+        },
+        "seniority_exact": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "seniority_within_one": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "syllabus_coverage": {
+          "mean": 0.684,
+          "n": 10,
+          "min": 0.417
+        }
+      },
+      "mean_score_by_tier": {
+        "strong": 4.0,
+        "partial": 2.8,
+        "vague": 1.8,
+        "wrong": 2.0,
+        "no_answer": 1.0
+      },
+      "mean_coverage_by_tier": {
+        "strong": 0.8,
+        "partial": 0.5,
+        "vague": 0.5,
+        "wrong": 0.35,
+        "no_answer": 0.0
+      },
+      "stats": {
+        "role_classification": {
+          "labels": [
+            "AI Engineer",
+            "Frontend Engineer",
+            "Data Engineer",
+            "DevOps / Cloud"
+          ],
+          "per_class": {
+            "AI Engineer": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            },
+            "Frontend Engineer": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            },
+            "Data Engineer": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            },
+            "DevOps / Cloud": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            }
+          },
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "confusion_matrix": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "confusion_index": [
+            "AI Engineer",
+            "Frontend Engineer",
+            "Data Engineer",
+            "DevOps / Cloud"
+          ]
+        },
+        "tier_rank_correlation": {
+          "n": 6,
+          "spearman_rho": 0.941,
+          "spearman_p": 0.0051
+        },
+        "judge_agreement": {
+          "n": 6,
+          "cohen_kappa": 0.632,
+          "spearman_rho": 0.893,
+          "spearman_p": 0.0165,
+          "mae": 0.467,
+          "mean_bias": -0.2,
+          "exact_verdict_match": 0.333
+        },
+        "requirement_retrieval": {
+          "precision": 0.586,
+          "recall": 0.9,
+          "f1": 0.709,
+          "n": 4
+        }
+      },
+      "n_thresholded": 29,
+      "n_passed": 27,
+      "passed": false,
+      "failures": [
+        "[rag_strong] tier strong: next_action 'drill_deeper' not in ['advance', 'probe_technology', 'raise_difficulty']"
+      ]
+    },
+    {
+      "strategy": "one_shot",
+      "wall_time_s": 757.7,
+      "usage": {
+        "calls": 92,
+        "prompt_tokens": 169745,
+        "completion_tokens": 76455,
+        "total_tokens": 246200,
+        "cost_usd": 0.039069,
+        "cost_estimated": true,
+        "p50_latency_s": 5.862,
+        "max_latency_s": 26.747
+      },
+      "metrics": {
+        "adaptive_action_policy": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "analysis_exemplar_clean": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "coverage_discrimination": {
+          "mean": 0.75,
+          "n": 1,
+          "min": 0.75
+        },
+        "coverage_matches_verdict": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "criticality_precision": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "difficulty_separation": {
+          "mean": 0.4,
+          "n": 5,
+          "min": 0.0
+        },
+        "emphasis_detected": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "evidence_grounding": {
+          "mean": 1.0,
+          "n": 5,
+          "min": 1.0
+        },
+        "follow_up_style": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "judge_score_agreement": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "judge_score_bias": {
+          "mean": -0.2,
+          "n": 6,
+          "min": -0.8
+        },
+        "judge_verdict_agreement": {
+          "mean": 0.667,
+          "n": 6,
+          "min": 0.0
+        },
+        "judged_difficulty_fit": {
+          "mean": 0.833,
+          "n": 4,
+          "min": 0.333
+        },
+        "judged_question_quality": {
+          "mean": 0.708,
+          "n": 4,
+          "min": 0.667
+        },
+        "plan_behavioral_balanced": {
+          "mean": 0.7,
+          "n": 10,
+          "min": 0.0
+        },
+        "plan_exemplar_clean": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "plan_topic_count_ok": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "plan_topic_grounding": {
+          "mean": 0.936,
+          "n": 10,
+          "min": 0.5
+        },
+        "plan_weights_valid": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "question_duplicate_rate": {
+          "mean": 0.0,
+          "n": 10,
+          "min": 0.0
+        },
+        "question_exemplar_clean": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "question_grounding": {
+          "mean": 0.95,
+          "n": 10,
+          "min": 0.625
+        },
+        "question_rubric_present": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "question_type_diversity": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "rejects_non_job_ad": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "report_flags_unmet_requirements": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "report_gives_study_plan": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "report_score_matches_answers": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "requirement_recall": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "role_accuracy": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "schema_validity": {
+          "mean": 1.0,
+          "n": 25,
+          "min": 1.0
+        },
+        "score_band_accuracy": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "score_discrimination": {
+          "mean": 0.75,
+          "n": 1,
+          "min": 0.75
+        },
+        "security_no_prompt_leak": {
+          "mean": 1.0,
+          "n": 11,
+          "min": 1.0
+        },
+        "security_resisted_ad_injection": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "security_resisted_score_injection": {
+          "mean": 1.0,
+          "n": 3,
+          "min": 1.0
+        },
+        "seniority_exact": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "seniority_within_one": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "syllabus_coverage": {
+          "mean": 0.714,
+          "n": 10,
+          "min": 0.545
+        }
+      },
+      "mean_score_by_tier": {
+        "strong": 4.8,
+        "partial": 2.4,
+        "vague": 1.8,
+        "wrong": 1.8,
+        "no_answer": 1.2
+      },
+      "mean_coverage_by_tier": {
+        "strong": 0.9,
+        "partial": 0.43,
+        "vague": 0.25,
+        "wrong": 0.25,
+        "no_answer": 0.2
+      },
+      "stats": {
+        "role_classification": {
+          "labels": [
+            "AI Engineer",
+            "Frontend Engineer",
+            "Data Engineer",
+            "DevOps / Cloud"
+          ],
+          "per_class": {
+            "AI Engineer": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            },
+            "Frontend Engineer": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            },
+            "Data Engineer": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            },
+            "DevOps / Cloud": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            }
+          },
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "confusion_matrix": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "confusion_index": [
+            "AI Engineer",
+            "Frontend Engineer",
+            "Data Engineer",
+            "DevOps / Cloud"
+          ]
+        },
+        "tier_rank_correlation": {
+          "n": 6,
+          "spearman_rho": 0.971,
+          "spearman_p": 0.0013
+        },
+        "judge_agreement": {
+          "n": 6,
+          "cohen_kappa": 0.727,
+          "spearman_rho": 0.955,
+          "spearman_p": 0.003,
+          "mae": 0.267,
+          "mean_bias": -0.2,
+          "exact_verdict_match": 0.5
+        },
+        "requirement_retrieval": {
+          "precision": 0.626,
+          "recall": 1.0,
+          "f1": 0.757,
+          "n": 4
+        }
+      },
+      "n_thresholded": 29,
+      "n_passed": 28,
+      "passed": false,
+      "failures": []
+    },
+    {
+      "strategy": "few_shot",
+      "wall_time_s": 752.8,
+      "usage": {
+        "calls": 90,
+        "prompt_tokens": 215686,
+        "completion_tokens": 69056,
+        "total_tokens": 284742,
+        "cost_usd": 0.038407,
+        "cost_estimated": true,
+        "p50_latency_s": 6.329,
+        "max_latency_s": 34.15
+      },
+      "metrics": {
+        "adaptive_action_policy": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "analysis_exemplar_clean": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "coverage_discrimination": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "coverage_matches_verdict": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "criticality_precision": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "difficulty_separation": {
+          "mean": 0.35,
+          "n": 5,
+          "min": 0.125
+        },
+        "emphasis_detected": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "evidence_grounding": {
+          "mean": 1.0,
+          "n": 5,
+          "min": 1.0
+        },
+        "follow_up_style": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "judge_score_agreement": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "judge_score_bias": {
+          "mean": -0.167,
+          "n": 6,
+          "min": -0.6
+        },
+        "judge_verdict_agreement": {
+          "mean": 0.833,
+          "n": 6,
+          "min": 0.5
+        },
+        "judged_difficulty_fit": {
+          "mean": 0.833,
+          "n": 4,
+          "min": 0.333
+        },
+        "judged_question_quality": {
+          "mean": 0.792,
+          "n": 4,
+          "min": 0.778
+        },
+        "plan_behavioral_balanced": {
+          "mean": 0.8,
+          "n": 10,
+          "min": 0.0
+        },
+        "plan_exemplar_clean": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "plan_topic_count_ok": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "plan_topic_grounding": {
+          "mean": 0.923,
+          "n": 10,
+          "min": 0.571
+        },
+        "plan_weights_valid": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "question_duplicate_rate": {
+          "mean": 0.0,
+          "n": 10,
+          "min": 0.0
+        },
+        "question_exemplar_clean": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "question_grounding": {
+          "mean": 0.938,
+          "n": 10,
+          "min": 0.625
+        },
+        "question_rubric_present": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "question_type_diversity": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "rejects_non_job_ad": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "report_flags_unmet_requirements": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "report_gives_study_plan": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "report_score_matches_answers": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "requirement_recall": {
+          "mean": 0.95,
+          "n": 4,
+          "min": 0.8
+        },
+        "role_accuracy": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "schema_validity": {
+          "mean": 1.0,
+          "n": 25,
+          "min": 1.0
+        },
+        "score_band_accuracy": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "score_discrimination": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "security_no_prompt_leak": {
+          "mean": 1.0,
+          "n": 11,
+          "min": 1.0
+        },
+        "security_resisted_ad_injection": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "security_resisted_score_injection": {
+          "mean": 1.0,
+          "n": 3,
+          "min": 1.0
+        },
+        "seniority_exact": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "seniority_within_one": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "syllabus_coverage": {
+          "mean": 0.686,
+          "n": 10,
+          "min": 0.571
+        }
+      },
+      "mean_score_by_tier": {
+        "strong": 5.0,
+        "partial": 2.5,
+        "vague": 1.8,
+        "wrong": 1.6,
+        "no_answer": 1.2
+      },
+      "mean_coverage_by_tier": {
+        "strong": 1.0,
+        "partial": 0.38,
+        "vague": 0.25,
+        "wrong": 0.2,
+        "no_answer": 0.0
+      },
+      "stats": {
+        "role_classification": {
+          "labels": [
+            "AI Engineer",
+            "Frontend Engineer",
+            "Data Engineer",
+            "DevOps / Cloud"
+          ],
+          "per_class": {
+            "AI Engineer": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            },
+            "Frontend Engineer": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            },
+            "Data Engineer": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            },
+            "DevOps / Cloud": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            }
+          },
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "confusion_matrix": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "confusion_index": [
+            "AI Engineer",
+            "Frontend Engineer",
+            "Data Engineer",
+            "DevOps / Cloud"
+          ]
+        },
+        "tier_rank_correlation": {
+          "n": 6,
+          "spearman_rho": 0.986,
+          "spearman_p": 0.0003
+        },
+        "judge_agreement": {
+          "n": 6,
+          "cohen_kappa": 0.909,
+          "spearman_rho": 0.941,
+          "spearman_p": 0.0051,
+          "mae": 0.233,
+          "mean_bias": -0.167,
+          "exact_verdict_match": 0.667
+        },
+        "requirement_retrieval": {
+          "precision": 0.585,
+          "recall": 0.95,
+          "f1": 0.722,
+          "n": 4
+        }
+      },
+      "n_thresholded": 29,
+      "n_passed": 29,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "strategy": "guided",
+      "wall_time_s": 815.7,
+      "usage": {
+        "calls": 91,
+        "prompt_tokens": 174286,
+        "completion_tokens": 92926,
+        "total_tokens": 267212,
+        "cost_usd": 0.045885,
+        "cost_estimated": true,
+        "p50_latency_s": 7.833,
+        "max_latency_s": 56.044
+      },
+      "metrics": {
+        "adaptive_action_policy": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "analysis_exemplar_clean": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "coverage_discrimination": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "coverage_matches_verdict": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "criticality_precision": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "difficulty_separation": {
+          "mean": 0.375,
+          "n": 5,
+          "min": 0.0
+        },
+        "emphasis_detected": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "evidence_grounding": {
+          "mean": 1.0,
+          "n": 5,
+          "min": 1.0
+        },
+        "follow_up_style": {
+          "mean": 0.667,
+          "n": 6,
+          "min": 0.0
+        },
+        "judge_score_agreement": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "judge_score_bias": {
+          "mean": -0.1,
+          "n": 6,
+          "min": -0.6
+        },
+        "judge_verdict_agreement": {
+          "mean": 0.833,
+          "n": 6,
+          "min": 0.5
+        },
+        "judged_difficulty_fit": {
+          "mean": 0.75,
+          "n": 4,
+          "min": 0.167
+        },
+        "judged_question_quality": {
+          "mean": 0.764,
+          "n": 4,
+          "min": 0.667
+        },
+        "plan_behavioral_balanced": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "plan_exemplar_clean": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "plan_topic_count_ok": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "plan_topic_grounding": {
+          "mean": 0.857,
+          "n": 10,
+          "min": 0.667
+        },
+        "plan_weights_valid": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "question_duplicate_rate": {
+          "mean": 0.0,
+          "n": 10,
+          "min": 0.0
+        },
+        "question_exemplar_clean": {
+          "mean": 0.967,
+          "n": 10,
+          "min": 0.667
+        },
+        "question_grounding": {
+          "mean": 0.887,
+          "n": 10,
+          "min": 0.75
+        },
+        "question_rubric_present": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "question_type_diversity": {
+          "mean": 0.986,
+          "n": 10,
+          "min": 0.857
+        },
+        "rejects_non_job_ad": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "report_flags_unmet_requirements": {
+          "mean": 0.0,
+          "n": 1,
+          "min": 0.0
+        },
+        "report_gives_study_plan": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "report_score_matches_answers": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "requirement_recall": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "role_accuracy": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "schema_validity": {
+          "mean": 1.0,
+          "n": 25,
+          "min": 1.0
+        },
+        "score_band_accuracy": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "score_discrimination": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "security_no_prompt_leak": {
+          "mean": 1.0,
+          "n": 11,
+          "min": 1.0
+        },
+        "security_resisted_ad_injection": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "security_resisted_score_injection": {
+          "mean": 1.0,
+          "n": 3,
+          "min": 1.0
+        },
+        "seniority_exact": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "seniority_within_one": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "syllabus_coverage": {
+          "mean": 0.72,
+          "n": 10,
+          "min": 0.571
+        }
+      },
+      "mean_score_by_tier": {
+        "strong": 4.8,
+        "partial": 2.6,
+        "vague": 2.0,
+        "wrong": 1.8,
+        "no_answer": 1.2
+      },
+      "mean_coverage_by_tier": {
+        "strong": 0.9,
+        "partial": 0.48,
+        "vague": 0.3,
+        "wrong": 0.25,
+        "no_answer": 0.0
+      },
+      "stats": {
+        "role_classification": {
+          "labels": [
+            "AI Engineer",
+            "Frontend Engineer",
+            "Data Engineer",
+            "DevOps / Cloud"
+          ],
+          "per_class": {
+            "AI Engineer": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            },
+            "Frontend Engineer": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            },
+            "Data Engineer": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            },
+            "DevOps / Cloud": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            }
+          },
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "confusion_matrix": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "confusion_index": [
+            "AI Engineer",
+            "Frontend Engineer",
+            "Data Engineer",
+            "DevOps / Cloud"
+          ]
+        },
+        "tier_rank_correlation": {
+          "n": 6,
+          "spearman_rho": 0.986,
+          "spearman_p": 0.0003
+        },
+        "judge_agreement": {
+          "n": 6,
+          "cohen_kappa": 0.909,
+          "spearman_rho": 0.941,
+          "spearman_p": 0.0051,
+          "mae": 0.233,
+          "mean_bias": -0.1,
+          "exact_verdict_match": 0.667
+        },
+        "requirement_retrieval": {
+          "precision": 0.519,
+          "recall": 1.0,
+          "f1": 0.675,
+          "n": 4
+        }
+      },
+      "n_thresholded": 29,
+      "n_passed": 28,
+      "passed": false,
+      "failures": []
+    },
+    {
+      "strategy": "self_critique",
+      "wall_time_s": 768.8,
+      "usage": {
+        "calls": 94,
+        "prompt_tokens": 141493,
+        "completion_tokens": 85506,
+        "total_tokens": 226999,
+        "cost_usd": 0.041277,
+        "cost_estimated": true,
+        "p50_latency_s": 6.79,
+        "max_latency_s": 29.421
+      },
+      "metrics": {
+        "adaptive_action_policy": {
+          "mean": 0.833,
+          "n": 6,
+          "min": 0.0
+        },
+        "analysis_exemplar_clean": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "coverage_discrimination": {
+          "mean": 0.75,
+          "n": 1,
+          "min": 0.75
+        },
+        "coverage_matches_verdict": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "criticality_precision": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "difficulty_separation": {
+          "mean": 0.45,
+          "n": 5,
+          "min": 0.125
+        },
+        "emphasis_detected": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "evidence_grounding": {
+          "mean": 1.0,
+          "n": 5,
+          "min": 1.0
+        },
+        "follow_up_style": {
+          "mean": 0.833,
+          "n": 6,
+          "min": 0.0
+        },
+        "judge_score_agreement": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "judge_score_bias": {
+          "mean": -0.1,
+          "n": 6,
+          "min": -0.6
+        },
+        "judge_verdict_agreement": {
+          "mean": 0.583,
+          "n": 6,
+          "min": 0.0
+        },
+        "judged_difficulty_fit": {
+          "mean": 0.792,
+          "n": 4,
+          "min": 0.167
+        },
+        "judged_question_quality": {
+          "mean": 0.75,
+          "n": 4,
+          "min": 0.667
+        },
+        "plan_behavioral_balanced": {
+          "mean": 0.8,
+          "n": 10,
+          "min": 0.0
+        },
+        "plan_exemplar_clean": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "plan_topic_count_ok": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "plan_topic_grounding": {
+          "mean": 0.883,
+          "n": 10,
+          "min": 0.4
+        },
+        "plan_weights_valid": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "question_duplicate_rate": {
+          "mean": 0.0,
+          "n": 10,
+          "min": 0.0
+        },
+        "question_exemplar_clean": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "question_grounding": {
+          "mean": 0.938,
+          "n": 10,
+          "min": 0.5
+        },
+        "question_rubric_present": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "question_type_diversity": {
+          "mean": 1.0,
+          "n": 10,
+          "min": 1.0
+        },
+        "rejects_non_job_ad": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "report_flags_unmet_requirements": {
+          "mean": 0.0,
+          "n": 1,
+          "min": 0.0
+        },
+        "report_gives_study_plan": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "report_score_matches_answers": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "requirement_recall": {
+          "mean": 0.9,
+          "n": 4,
+          "min": 0.6
+        },
+        "role_accuracy": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "schema_validity": {
+          "mean": 1.0,
+          "n": 25,
+          "min": 1.0
+        },
+        "score_band_accuracy": {
+          "mean": 1.0,
+          "n": 6,
+          "min": 1.0
+        },
+        "score_discrimination": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "security_no_prompt_leak": {
+          "mean": 1.0,
+          "n": 11,
+          "min": 1.0
+        },
+        "security_resisted_ad_injection": {
+          "mean": 1.0,
+          "n": 1,
+          "min": 1.0
+        },
+        "security_resisted_score_injection": {
+          "mean": 1.0,
+          "n": 3,
+          "min": 1.0
+        },
+        "seniority_exact": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "seniority_within_one": {
+          "mean": 1.0,
+          "n": 4,
+          "min": 1.0
+        },
+        "syllabus_coverage": {
+          "mean": 0.679,
+          "n": 10,
+          "min": 0.571
+        }
+      },
+      "mean_score_by_tier": {
+        "strong": 4.4,
+        "partial": 2.8,
+        "vague": 2.2,
+        "wrong": 1.8,
+        "no_answer": 1.0
+      },
+      "mean_coverage_by_tier": {
+        "strong": 0.8,
+        "partial": 0.5,
+        "vague": 0.25,
+        "wrong": 0.3,
+        "no_answer": 0.0
+      },
+      "stats": {
+        "role_classification": {
+          "labels": [
+            "AI Engineer",
+            "Frontend Engineer",
+            "Data Engineer",
+            "DevOps / Cloud"
+          ],
+          "per_class": {
+            "AI Engineer": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            },
+            "Frontend Engineer": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            },
+            "Data Engineer": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            },
+            "DevOps / Cloud": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 1
+            }
+          },
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "confusion_matrix": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "confusion_index": [
+            "AI Engineer",
+            "Frontend Engineer",
+            "Data Engineer",
+            "DevOps / Cloud"
+          ]
+        },
+        "tier_rank_correlation": {
+          "n": 6,
+          "spearman_rho": 0.986,
+          "spearman_p": 0.0003
+        },
+        "judge_agreement": {
+          "n": 6,
+          "cohen_kappa": 0.632,
+          "spearman_rho": 0.941,
+          "spearman_p": 0.0051,
+          "mae": 0.3,
+          "mean_bias": -0.1,
+          "exact_verdict_match": 0.333
+        },
+        "requirement_retrieval": {
+          "precision": 0.577,
+          "recall": 0.9,
+          "f1": 0.703,
+          "n": 4
+        }
+      },
+      "n_thresholded": 29,
+      "n_passed": 28,
+      "passed": false,
+      "failures": [
+        "[rag_strong] tier strong: next_action 'drill_deeper' not in ['advance', 'probe_technology', 'raise_difficulty']"
+      ]
+    }
+  ],
+  "passed": false,
+  "matrix": {
+    "zero_shot": {
+      "adaptive_action_policy": 0.833,
+      "analysis_exemplar_clean": 1.0,
+      "coverage_discrimination": 0.75,
+      "coverage_matches_verdict": 1.0,
+      "criticality_precision": 1.0,
+      "difficulty_separation": 0.475,
+      "emphasis_detected": 1.0,
+      "evidence_grounding": 1.0,
+      "follow_up_style": 0.833,
+      "judge_score_agreement": 1.0,
+      "judge_score_bias": -0.2,
+      "judge_verdict_agreement": 0.583,
+      "judged_difficulty_fit": 0.792,
+      "judged_question_quality": 0.708,
+      "plan_behavioral_balanced": 0.9,
+      "plan_exemplar_clean": 1.0,
+      "plan_topic_count_ok": 1.0,
+      "plan_topic_grounding": 0.863,
+      "plan_weights_valid": 1.0,
+      "question_duplicate_rate": 0.0,
+      "question_exemplar_clean": 1.0,
+      "question_grounding": 0.875,
+      "question_rubric_present": 0.988,
+      "question_type_diversity": 1.0,
+      "rejects_non_job_ad": 1.0,
+      "report_flags_unmet_requirements": 1.0,
+      "report_gives_study_plan": 1.0,
+      "report_score_matches_answers": 1.0,
+      "requirement_recall": 0.9,
+      "role_accuracy": 1.0,
+      "schema_validity": 1.0,
+      "score_band_accuracy": 1.0,
+      "score_discrimination": 0.75,
+      "security_no_prompt_leak": 1.0,
+      "security_resisted_ad_injection": 1.0,
+      "security_resisted_score_injection": 1.0,
+      "seniority_exact": 1.0,
+      "seniority_within_one": 1.0,
+      "syllabus_coverage": 0.684
+    },
+    "one_shot": {
+      "adaptive_action_policy": 1.0,
+      "analysis_exemplar_clean": 1.0,
+      "coverage_discrimination": 0.75,
+      "coverage_matches_verdict": 1.0,
+      "criticality_precision": 1.0,
+      "difficulty_separation": 0.4,
+      "emphasis_detected": 1.0,
+      "evidence_grounding": 1.0,
+      "follow_up_style": 1.0,
+      "judge_score_agreement": 1.0,
+      "judge_score_bias": -0.2,
+      "judge_verdict_agreement": 0.667,
+      "judged_difficulty_fit": 0.833,
+      "judged_question_quality": 0.708,
+      "plan_behavioral_balanced": 0.7,
+      "plan_exemplar_clean": 1.0,
+      "plan_topic_count_ok": 1.0,
+      "plan_topic_grounding": 0.936,
+      "plan_weights_valid": 1.0,
+      "question_duplicate_rate": 0.0,
+      "question_exemplar_clean": 1.0,
+      "question_grounding": 0.95,
+      "question_rubric_present": 1.0,
+      "question_type_diversity": 1.0,
+      "rejects_non_job_ad": 1.0,
+      "report_flags_unmet_requirements": 1.0,
+      "report_gives_study_plan": 1.0,
+      "report_score_matches_answers": 1.0,
+      "requirement_recall": 1.0,
+      "role_accuracy": 1.0,
+      "schema_validity": 1.0,
+      "score_band_accuracy": 1.0,
+      "score_discrimination": 0.75,
+      "security_no_prompt_leak": 1.0,
+      "security_resisted_ad_injection": 1.0,
+      "security_resisted_score_injection": 1.0,
+      "seniority_exact": 1.0,
+      "seniority_within_one": 1.0,
+      "syllabus_coverage": 0.714
+    },
+    "few_shot": {
+      "adaptive_action_policy": 1.0,
+      "analysis_exemplar_clean": 1.0,
+      "coverage_discrimination": 1.0,
+      "coverage_matches_verdict": 1.0,
+      "criticality_precision": 1.0,
+      "difficulty_separation": 0.35,
+      "emphasis_detected": 1.0,
+      "evidence_grounding": 1.0,
+      "follow_up_style": 1.0,
+      "judge_score_agreement": 1.0,
+      "judge_score_bias": -0.167,
+      "judge_verdict_agreement": 0.833,
+      "judged_difficulty_fit": 0.833,
+      "judged_question_quality": 0.792,
+      "plan_behavioral_balanced": 0.8,
+      "plan_exemplar_clean": 1.0,
+      "plan_topic_count_ok": 1.0,
+      "plan_topic_grounding": 0.923,
+      "plan_weights_valid": 1.0,
+      "question_duplicate_rate": 0.0,
+      "question_exemplar_clean": 1.0,
+      "question_grounding": 0.938,
+      "question_rubric_present": 1.0,
+      "question_type_diversity": 1.0,
+      "rejects_non_job_ad": 1.0,
+      "report_flags_unmet_requirements": 1.0,
+      "report_gives_study_plan": 1.0,
+      "report_score_matches_answers": 1.0,
+      "requirement_recall": 0.95,
+      "role_accuracy": 1.0,
+      "schema_validity": 1.0,
+      "score_band_accuracy": 1.0,
+      "score_discrimination": 1.0,
+      "security_no_prompt_leak": 1.0,
+      "security_resisted_ad_injection": 1.0,
+      "security_resisted_score_injection": 1.0,
+      "seniority_exact": 1.0,
+      "seniority_within_one": 1.0,
+      "syllabus_coverage": 0.686
+    },
+    "guided": {
+      "adaptive_action_policy": 1.0,
+      "analysis_exemplar_clean": 1.0,
+      "coverage_discrimination": 1.0,
+      "coverage_matches_verdict": 1.0,
+      "criticality_precision": 1.0,
+      "difficulty_separation": 0.375,
+      "emphasis_detected": 1.0,
+      "evidence_grounding": 1.0,
+      "follow_up_style": 0.667,
+      "judge_score_agreement": 1.0,
+      "judge_score_bias": -0.1,
+      "judge_verdict_agreement": 0.833,
+      "judged_difficulty_fit": 0.75,
+      "judged_question_quality": 0.764,
+      "plan_behavioral_balanced": 1.0,
+      "plan_exemplar_clean": 1.0,
+      "plan_topic_count_ok": 1.0,
+      "plan_topic_grounding": 0.857,
+      "plan_weights_valid": 1.0,
+      "question_duplicate_rate": 0.0,
+      "question_exemplar_clean": 0.967,
+      "question_grounding": 0.887,
+      "question_rubric_present": 1.0,
+      "question_type_diversity": 0.986,
+      "rejects_non_job_ad": 1.0,
+      "report_flags_unmet_requirements": 0.0,
+      "report_gives_study_plan": 1.0,
+      "report_score_matches_answers": 1.0,
+      "requirement_recall": 1.0,
+      "role_accuracy": 1.0,
+      "schema_validity": 1.0,
+      "score_band_accuracy": 1.0,
+      "score_discrimination": 1.0,
+      "security_no_prompt_leak": 1.0,
+      "security_resisted_ad_injection": 1.0,
+      "security_resisted_score_injection": 1.0,
+      "seniority_exact": 1.0,
+      "seniority_within_one": 1.0,
+      "syllabus_coverage": 0.72
+    },
+    "self_critique": {
+      "adaptive_action_policy": 0.833,
+      "analysis_exemplar_clean": 1.0,
+      "coverage_discrimination": 0.75,
+      "coverage_matches_verdict": 1.0,
+      "criticality_precision": 1.0,
+      "difficulty_separation": 0.45,
+      "emphasis_detected": 1.0,
+      "evidence_grounding": 1.0,
+      "follow_up_style": 0.833,
+      "judge_score_agreement": 1.0,
+      "judge_score_bias": -0.1,
+      "judge_verdict_agreement": 0.583,
+      "judged_difficulty_fit": 0.792,
+      "judged_question_quality": 0.75,
+      "plan_behavioral_balanced": 0.8,
+      "plan_exemplar_clean": 1.0,
+      "plan_topic_count_ok": 1.0,
+      "plan_topic_grounding": 0.883,
+      "plan_weights_valid": 1.0,
+      "question_duplicate_rate": 0.0,
+      "question_exemplar_clean": 1.0,
+      "question_grounding": 0.938,
+      "question_rubric_present": 1.0,
+      "question_type_diversity": 1.0,
+      "rejects_non_job_ad": 1.0,
+      "report_flags_unmet_requirements": 0.0,
+      "report_gives_study_plan": 1.0,
+      "report_score_matches_answers": 1.0,
+      "requirement_recall": 0.9,
+      "role_accuracy": 1.0,
+      "schema_validity": 1.0,
+      "score_band_accuracy": 1.0,
+      "score_discrimination": 1.0,
+      "security_no_prompt_leak": 1.0,
+      "security_resisted_ad_injection": 1.0,
+      "security_resisted_score_injection": 1.0,
+      "seniority_exact": 1.0,
+      "seniority_within_one": 1.0,
+      "syllabus_coverage": 0.679
+    }
+  },
+  "usage_table": {
+    "zero_shot": {
+      "calls": 88,
+      "prompt_tokens": 108447,
+      "completion_tokens": 75408,
+      "total_tokens": 183855,
+      "cost_usd": 0.035586,
+      "p50_latency_s": 6.866,
+      "wall_time_s": 730.8,
+      "thresholds_met": "27/29"
+    },
+    "one_shot": {
+      "calls": 92,
+      "prompt_tokens": 169745,
+      "completion_tokens": 76455,
+      "total_tokens": 246200,
+      "cost_usd": 0.039069,
+      "p50_latency_s": 5.862,
+      "wall_time_s": 757.7,
+      "thresholds_met": "28/29"
+    },
+    "few_shot": {
+      "calls": 90,
+      "prompt_tokens": 215686,
+      "completion_tokens": 69056,
+      "total_tokens": 284742,
+      "cost_usd": 0.038407,
+      "p50_latency_s": 6.329,
+      "wall_time_s": 752.8,
+      "thresholds_met": "29/29"
+    },
+    "guided": {
+      "calls": 91,
+      "prompt_tokens": 174286,
+      "completion_tokens": 92926,
+      "total_tokens": 267212,
+      "cost_usd": 0.045885,
+      "p50_latency_s": 7.833,
+      "wall_time_s": 815.7,
+      "thresholds_met": "28/29"
+    },
+    "self_critique": {
+      "calls": 94,
+      "prompt_tokens": 141493,
+      "completion_tokens": 85506,
+      "total_tokens": 226999,
+      "cost_usd": 0.041277,
+      "p50_latency_s": 6.79,
+      "wall_time_s": 768.8,
+      "thresholds_met": "28/29"
+    }
+  }
+}

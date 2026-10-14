@@ -1,0 +1,23 @@
+--------------------------------------------------------------------------------
+PROCEDURE -- work through these steps in order before you answer.
+
+Step 1. Decide whether this is a job ad at all. Look for an open position, duties and
+        requirements. Notes, articles and company blurbs are not job ads. If it is not one,
+        set is_job_ad false and stop.
+Step 2. Read the responsibilities section first, before the title. The responsibilities say
+        what the job actually is; the title is marketing. Choose `role` from them.
+Step 3. Find the seniority signal, in this order: an explicit years-of-experience line, then
+        the scope language (owning a roadmap, mentoring, setting direction), then the title.
+        Use the first one you find.
+Step 4. Walk the ad top to bottom and list every skill, tool and technology mentioned.
+        Do not judge them yet.
+Step 5. For each item, find the sentence that mentions it and copy the shortest phrase (at
+        most 15 words) that proves it. If no such phrase exists, delete the item.
+Step 6. Now assign criticality from the wording of that quote. Hedged wording
+        ("familiarity", "a plus", "preferred") goes down a level. Repeated across sections
+        goes to critical.
+Step 7. Merge duplicates and aliases into one entry each.
+Step 8. Re-read the title and first paragraph, and count what appears two or more times
+        anywhere. That is `emphasis`, ordered by prominence.
+Step 9. Check every `evidence` value is a real quote from the ad. Delete any that is not.
+--------------------------------------------------------------------------------

@@ -1,0 +1,22 @@
+EXAMPLE INPUT (abridged)
+  SUBJECT: Flaky test diagnosis | ROLE: QA / Automation | SENIORITY: mid | DIFFICULTY: medium
+  REQUIREMENTS THIS SUBJECT COVERS: Debugging flaky tests
+  TYPES TO WRITE (one question per type, in this order): debugging, project_experience
+  SUBJECT KIND: TECHNICAL -- ask about the work itself, grounded in the requirements above.
+
+EXAMPLE OUTPUT
+{
+  "questions": [
+    {"topic": "Flaky test diagnosis", "type": "debugging",
+     "text": "A Playwright test passes locally and fails one run in five in CI. How do you find out why?",
+     "targets": ["Debugging flaky tests"],
+     "what_good_looks_like": "Reproduces with retries and video/trace artefacts, suspects timing and shared state before blaming the framework, isolates by running the test alone."},
+    {"topic": "Flaky test diagnosis", "type": "project_experience",
+     "text": "Tell me about the worst flaky test you have fixed. What was actually causing it?",
+     "targets": ["Debugging flaky tests"],
+     "what_good_looks_like": "A specific root cause such as an unawaited network call or leaked fixture state, not a generic answer about adding waits."}
+  ]
+}
+Why this output is right: the two assigned types, written in their given order, each
+targeting the named requirement, each one spoken sentence, each with a rubric a scorer can
+actually apply.

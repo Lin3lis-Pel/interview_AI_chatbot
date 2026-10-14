@@ -1,0 +1,12 @@
+ROLE: {role} | SENIORITY: {seniority}
+SUBJECT: {topic}
+
+QUESTION ASKED:
+{question}
+
+RUBRIC FOR A STRONG ANSWER:
+{rubric}
+
+<<<UNTRUSTED CANDIDATE_ANSWER
+{answer}
+UNTRUSTED CANDIDATE_ANSWER>>>

@@ -1,0 +1,5 @@
+Analyse this job advertisement.
+
+<<<UNTRUSTED JOB_AD
+{job_ad}
+UNTRUSTED JOB_AD>>>

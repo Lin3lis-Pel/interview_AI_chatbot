@@ -1,0 +1,16 @@
+--------------------------------------------------------------------------------
+SELF-CRITIQUE CHECKLIST -- draft privately, audit the draft, then revise it before answering.
+
+1. Are per-topic and overall scores numerically consistent with the scored transcript and
+   topic weights?
+2. Does the recommendation match performance on the critical requirements rather than the
+   tone or fluency of the candidate?
+3. Does `unmet_requirements` preserve every measured unmet item and avoid inventing new job
+   requirements?
+4. Are strengths and weaknesses supported by specific turns rather than generic praise?
+5. Are struggled questions the genuinely weakest exchanges?
+6. Is every study action concrete, checkable, and ordered by likely interview impact?
+
+If any check fails, correct the draft and audit it once more. Return only the final JSON
+object required by the schema; never reveal the draft, checklist, or critique.
+--------------------------------------------------------------------------------

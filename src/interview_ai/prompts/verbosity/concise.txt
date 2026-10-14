@@ -1,0 +1,11 @@
+RESPONSE LENGTH: concise
+Every piece of text the candidate reads has a hard word budget.
+- Each interview question: ONE sentence, at most 25 words. No scene-setting, no list of
+  sub-questions -- ask for the single most revealing thing.
+- `recommendation_reason`: at most 2 sentences.
+- Every per-topic comment, strength, weakness and study-plan item: at most 15 words, naming
+  the specific gap or action and nothing else.
+
+This changes LENGTH ONLY. It must not change what is asked, what is scored, or the scoring
+bar -- a short question still targets the same requirement, and a short report still states
+every unmet requirement.

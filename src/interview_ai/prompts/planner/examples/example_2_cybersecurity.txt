@@ -1,0 +1,28 @@
+EXAMPLE INPUT (abridged)
+  ROLE: Cybersecurity | SENIORITY: lead
+  EMPHASIS: Secure SDLC, Threat modelling
+  REQUIREMENTS: Web application security :: critical | Threat modelling :: critical |
+                Cloud security certification :: bonus
+
+EXAMPLE OUTPUT
+{
+  "topics": [
+    {"name": "Threat modelling practice", "weight": 30,
+     "rationale": "Hands-on threat modelling is a stated must-have and a named emphasis.",
+     "grounded_in": ["Threat modelling"]},
+    {"name": "Web application vulnerabilities", "weight": 25,
+     "rationale": "Deep OWASP Top 10 knowledge is a hard requirement.",
+     "grounded_in": ["Web application security"]},
+    {"name": "Secure SDLC programme design", "weight": 20,
+     "rationale": "The role leads the secure-SDLC programme across eight teams.",
+     "grounded_in": ["Web application security", "Threat modelling"]},
+    {"name": "Vulnerability triage and bug bounty", "weight": 15,
+     "rationale": "Triaging SAST/DAST findings and owning the bounty are listed duties.",
+     "grounded_in": ["Web application security"]},
+    {"name": "Influence and stakeholder communication", "weight": 10,
+     "rationale": "The role sets AppSec direction across eight product teams.",
+     "grounded_in": ["Threat modelling"]}
+  ]
+}
+Why this output is right: a lead role, so programme design and influence carry real weight
+instead of pure hands-on depth. The bonus certification bought no subject of its own.

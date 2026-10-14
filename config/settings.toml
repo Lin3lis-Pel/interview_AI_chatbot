@@ -1,0 +1,56 @@
+# Application settings. Change a value and restart Streamlit.
+# Keep the OpenRouter API key in `.env`, never in this file.
+
+[model]
+model = "openai/gpt-5-nano"
+base_url = "https://openrouter.ai/api/v1"
+reasoning_effort = "low"
+
+# Output limits for each AI stage. Reasoning tokens are included in these limits.
+[max_tokens]
+analyzer = 4000
+planner = 5000
+questioner = 4000
+evaluator = 3000
+reporter = 5000
+
+# zero_shot | one_shot | few_shot | guided | self_critique
+# few_shot is the default because it was the only strategy to pass all 29 benchmark gates
+# (1 Sep 2026 run). zero_shot is ~7% cheaper if cost matters more than quality.
+[strategy]
+default = "few_shot"
+
+[interview]
+questions = 10
+persona = "neutral"          # neutral | friendly | strict
+verbosity = "standard"       # standard | concise | detailed (questions + final report)
+max_followups = 1
+
+# Minimum answer coverage needed to move to the next base question.
+[coverage]
+easy = 0.5
+medium = 0.7
+hard = 0.85
+
+[limits]
+max_concurrency = 8
+timeout_s = 90
+max_retries = 3
+max_calls_per_session = 300
+max_job_ad_chars = 24000
+max_answer_chars = 6000
+url_fetch_timeout_s = 15
+url_max_bytes = 2000000
+
+# Independent judge for the evaluation benchmark -- OFF by default. The app never uses it.
+# To turn it on: install Ollama, run `ollama pull gemma4:e4b`, uncomment the block below,
+# then pass --judge to the benchmark. See "Independent judge" in README.md.
+# [judge]
+# model = "gemma4:e4b"
+# base_url = "http://127.0.0.1:11434/v1"
+# strategy = "guided"
+# max_concurrency = 1
+
+[app]
+title = "interview_AI"
+site_url = "http://localhost:8501"

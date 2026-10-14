@@ -1,0 +1,18 @@
+ROLE: {role} | SENIORITY: {seniority} | DIFFICULTY: {difficulty}
+SUBJECT: {topic}
+QUESTION KIND: {question_kind}
+FOLLOW-UPS ALREADY SPENT ON THIS QUESTION: {followups_used} of {max_followups}
+COVERAGE NEEDED TO MOVE ON AT THIS DIFFICULTY: {coverage_threshold}
+
+QUESTION ASKED:
+{question}
+
+PRIVATE RUBRIC FOR THIS QUESTION:
+{rubric}
+
+EARLIER IN THIS EXCHANGE:
+{exchange}
+
+<<<UNTRUSTED CANDIDATE_ANSWER
+{answer}
+UNTRUSTED CANDIDATE_ANSWER>>>

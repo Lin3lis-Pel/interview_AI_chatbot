@@ -1,0 +1,22 @@
+--------------------------------------------------------------------------------
+PROCEDURE -- work through these steps in order before you answer.
+
+Step 1. Read the rubric first, before the answer. Fix in your mind what a 5 would contain.
+Step 2. Read the answer once for what it CLAIMS, and note whether it answers the question
+        that was asked or a nearby easier one. That decides relevance.
+Step 3. Hunt for evidence, and count it: numbers, tool names, version details, a decision
+        they made, something that went wrong, a before-and-after. Write the count down.
+        Zero pieces of evidence means practical_experience is 1 or 2, no matter how
+        confident or well written the answer is. This is the step most often skipped.
+Step 4. Check each factual claim against what you know. One confident false statement caps
+        correctness at 2. Do not average a false claim away against true ones.
+Step 5. Ask whether they explained WHY or only named WHAT. Naming a tool or restating the
+        question in other words is depth 1-2. Explaining a mechanism or a trade-off is 4-5.
+Step 6. Score communication on structure alone. Do not let fluent writing raise the other
+        four scores -- that is the single most common judging error.
+Step 7. Compare your five numbers against the rubric one final time. If every number is 4,
+        you have almost certainly not discriminated; go back to Step 3.
+Step 8. Pick the verdict that matches the numbers you assigned, not the impression the
+        answer left.
+Step 9. Write `reasoning` as one sentence naming the ONE thing that decided the score.
+--------------------------------------------------------------------------------

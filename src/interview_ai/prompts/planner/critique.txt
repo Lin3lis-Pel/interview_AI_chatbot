@@ -1,0 +1,14 @@
+--------------------------------------------------------------------------------
+SELF-CRITIQUE CHECKLIST -- draft privately, audit the draft, then revise it before answering.
+
+1. Are there 4-7 subjects, including exactly one genuinely behavioral subject?
+2. Do the integer weights total exactly 100? Add them again rather than estimating.
+3. Does every technical subject cover at least one named requirement in `grounded_in`?
+4. Do critical requirements and emphasized themes receive more weight than bonus items?
+5. Are subject names specific to this role and free of generic labels?
+6. Does the balance match the detected seniority, and does every rationale explain what in
+   the ad earned its weight?
+
+If any check fails, correct the draft and audit it once more. Return only the final JSON
+object required by the schema; never reveal the draft, checklist, or critique.
+--------------------------------------------------------------------------------

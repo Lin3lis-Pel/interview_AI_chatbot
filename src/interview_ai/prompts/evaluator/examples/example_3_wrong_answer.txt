@@ -1,0 +1,24 @@
+EXAMPLE INPUT (abridged)
+  QUESTION: A Playwright test fails one run in five in CI. How do you find out why?
+  RUBRIC: Reproduces with retries and traces, suspects timing and shared state, isolates the test.
+  ANSWER: "Intermittent failures are almost always a CI hardware problem, so there is
+  nothing to find in the test itself. The standard fix is to set retries to three, which
+  makes the test deterministic again."
+
+EXAMPLE OUTPUT
+{
+  "verdict": "wrong",
+  "information_coverage": 0.1,
+  "scores": {"correctness": 1, "depth": 2, "practical_experience": 2, "communication": 4, "relevance": 3},
+  "covered": ["Knows the retry mechanism exists"],
+  "missing": ["Retries hide flakiness rather than removing it",
+              "No consideration of timing or shared state in the test",
+              "Blames infrastructure without evidence"],
+  "mentioned_technologies": [],
+  "next_action": "clarify",
+  "follow_up": "You mentioned retries make it deterministic again -- what does the test do differently on the retry?"
+}
+Why this output is right: the claim is materially false, so correctness is 1 even though the
+answer is well-structured. The follow-up gives one neutral chance without revealing the
+answer or arguing. Coverage is 0.1: a wrong method satisfies no rubric point, and fluency
+earns nothing here.

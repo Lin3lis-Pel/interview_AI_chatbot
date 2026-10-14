@@ -1,0 +1,13 @@
+Design the interview plan.
+
+ROLE: {role}
+SENIORITY: {seniority}  ({seniority_rubric})
+DIFFICULTY SETTING: {difficulty} -- {difficulty_rubric}
+DOMAIN: {domain}
+COMPANY EMPHASIS: {emphasis}
+
+REQUIREMENTS (name :: criticality :: evidence)
+{requirements}
+
+RESPONSIBILITIES
+{responsibilities}

@@ -1,0 +1,34 @@
+# secrets
+.env
+.streamlit/secrets.toml
+
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Generated output: ordinary eval reports, judge runs, and compiled prompts stay ignored.
+# Keep the latest five-arm evidence bundle so README links work in a submitted repository.
+artifacts/*
+!artifacts/.gitkeep
+!artifacts/latest.md
+!artifacts/eval-20260901-163722.md
+!artifacts/eval-20260901-163722.json
+!artifacts/artifacts-20260901-163722.jsonl
+# Model-setting experiments linked from the README (token cap, response length v1 -> v2).
+!artifacts/experiment-max-tokens-20261004-103315.md
+!artifacts/experiment-verbosity-20261004-104039.md
+!artifacts/experiment-verbosity-20261004-104433.md
+
+# local AI-assistant config -- not part of the submission
+.claude/
+CLAUDE.md
+codex.md
+AGENTS.md
+.codex/

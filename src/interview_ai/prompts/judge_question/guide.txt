@@ -1,0 +1,18 @@
+--------------------------------------------------------------------------------
+PROCEDURE -- work through these steps in order before you answer.
+
+Step 1. Read the requirements list. Find the specific requirement this question tests. If
+        you cannot point to one, `grounded` is false.
+Step 2. Count the asks. Look for "and", "also", "as well as", and question marks. More than
+        one thing being asked means `single_ask` is false, even when the halves are related.
+Step 3. Ask yourself: would an engineer doing this job actually say this sentence out loud in
+        an interview? Quiz phrasing, definitions with no application, and puzzle questions
+        make `realistic` false.
+Step 4. Ask whether the answer is already printed in the job ad, or findable in one search.
+        Either makes `realistic` false.
+Step 5. Judge difficulty against the seniority AND the difficulty setting together. A
+        definition question at senior/hard is too_easy. A distributed-architecture question
+        at junior/easy is too_hard. Only mark about_right when it fits both.
+Step 6. Write `comment` as one sentence naming the biggest single problem, or what makes it
+        good if you found no problem.
+--------------------------------------------------------------------------------

@@ -1,0 +1,1 @@
+GROUNDING: use only what the source text supports. If a field is not present, leave it empty rather than guessing -- a fabricated requirement produces a useless interview.

@@ -1,0 +1,7 @@
+[server]
+enableXsrfProtection = true
+enableCORS = true
+maxUploadSize = 2
+
+[browser]
+gatherUsageStats = false

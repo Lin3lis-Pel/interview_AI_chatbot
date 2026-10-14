@@ -1,0 +1,14 @@
+--------------------------------------------------------------------------------
+SELF-CRITIQUE CHECKLIST -- draft privately, audit the draft, then revise it before answering.
+
+1. Is `is_job_ad` supported by an actual open position, duties, and requirements?
+2. Does `role` follow the described work rather than merely copying the title?
+3. Does `seniority` follow years, then scope, then title in that order?
+4. Can every requirement's evidence be found verbatim in the ad in at most 15 words?
+5. Does each criticality match the wording, with ambiguous items classified downward?
+6. Are aliases merged, invented items removed, and emphasis limited to repeated or
+   foregrounded themes?
+
+If any check fails, correct the draft and audit it once more. Return only the final JSON
+object required by the schema; never reveal the draft, checklist, or critique.
+--------------------------------------------------------------------------------

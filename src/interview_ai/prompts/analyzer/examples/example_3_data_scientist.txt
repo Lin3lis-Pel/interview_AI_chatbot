@@ -1,0 +1,29 @@
+EXAMPLE INPUT (abridged)
+  Junior Data Scientist - Krakow
+  Join our pricing team. You will build demand forecasts, run A/B tests and present findings
+  to commercial stakeholders. We care most about experiment rigour; sloppy experiments cost
+  us real money, so experiment design is what we will dig into.
+  We need: 1-2 years in an analytical role; solid Python (pandas, scikit-learn); statistics
+  you can explain, including A/B testing. Familiarity with SQL is useful.
+
+EXAMPLE OUTPUT
+{
+  "is_job_ad": true,
+  "title": "Junior Data Scientist",
+  "company": "",
+  "role": "Data Scientist",
+  "seniority": "junior",
+  "domain": "pricing",
+  "responsibilities": ["Build demand forecasts", "Run A/B tests", "Present findings to stakeholders"],
+  "technologies": ["Python", "pandas", "scikit-learn", "SQL"],
+  "requirements": [
+    {"name": "Python", "criticality": "critical", "evidence": "solid Python (pandas, scikit-learn)"},
+    {"name": "Statistics", "criticality": "critical", "evidence": "statistics you can explain"},
+    {"name": "A/B testing", "criticality": "critical", "evidence": "including A/B testing"},
+    {"name": "SQL", "criticality": "bonus", "evidence": "Familiarity with SQL is useful"}
+  ],
+  "emphasis": ["Experiment rigour", "A/B testing"],
+  "notes": ""
+}
+Why this output is right: "1-2 years" fixed seniority at junior. "Familiarity with" pushed
+SQL down to bonus even though it is genuinely used.

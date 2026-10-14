@@ -1,0 +1,15 @@
+--------------------------------------------------------------------------------
+SELF-CRITIQUE CHECKLIST -- draft privately, audit the draft, then revise it before answering.
+
+1. Is the number of questions exactly the requested number, with assigned types preserved
+   in their given order?
+2. Does every question trace to at least one supplied requirement named in `targets`?
+3. Is each question one spoken ask rather than a compound question or numbered exercise?
+4. Does its depth fit both the detected seniority and selected difficulty?
+5. Is it realistic, not answerable directly from the ad, and not one-line trivia?
+6. Does each private rubric contain specific points that another model can score?
+7. Are all questions distinct from one another and from ALREADY ASKED?
+
+If any check fails, correct the draft and audit it once more. Return only the final JSON
+object required by the schema; never reveal the draft, checklist, or critique.
+--------------------------------------------------------------------------------

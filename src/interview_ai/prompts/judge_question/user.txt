@@ -1,0 +1,8 @@
+ROLE: {role} | SENIORITY: {seniority} | DIFFICULTY SETTING: {difficulty}
+SUBJECT: {topic}
+WHAT THE JOB AD ASKS FOR: {requirements}
+
+QUESTION UNDER REVIEW:
+{question}
+
+TYPE THE AUTHOR INTENDED: {qtype}

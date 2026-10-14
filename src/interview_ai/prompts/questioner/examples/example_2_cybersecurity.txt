@@ -1,0 +1,21 @@
+EXAMPLE INPUT (abridged)
+  SUBJECT: Threat modelling practice | ROLE: Cybersecurity | SENIORITY: lead | DIFFICULTY: hard
+  REQUIREMENTS THIS SUBJECT COVERS: Threat modelling
+  TYPES TO WRITE (one question per type, in this order): scenario, architecture
+  SUBJECT KIND: TECHNICAL -- ask about the work itself, grounded in the requirements above.
+
+EXAMPLE OUTPUT
+{
+  "questions": [
+    {"topic": "Threat modelling practice", "type": "scenario",
+     "text": "A product team ships weekly and says threat modelling will slow them down. How do you get it done anyway?",
+     "targets": ["Threat modelling"],
+     "what_good_looks_like": "Scales the exercise to the change, embeds it in existing rituals rather than adding a gate, and can name what they would drop to keep it cheap."},
+    {"topic": "Threat modelling practice", "type": "architecture",
+     "text": "Walk me through threat modelling a new payment webhook. Where do you expect the real risk to sit?",
+     "targets": ["Threat modelling"],
+     "what_good_looks_like": "Trust boundaries first, then replay and signature verification, idempotency, and secret handling; prioritises by impact rather than listing every threat."}
+  ]
+}
+Why this output is right: a lead at hard difficulty, so both questions force a defence under
+pressure rather than asking what a threat model is.

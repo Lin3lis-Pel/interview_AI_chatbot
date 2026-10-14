@@ -1,0 +1,17 @@
+JOB: {title} @ {company}
+ROLE: {role} | SENIORITY: {seniority} | DIFFICULTY PLAYED: {difficulty}
+
+CRITICAL / IMPORTANT REQUIREMENTS FROM THE AD:
+{requirements}
+
+INTERVIEW PLAN (subject :: weight):
+{plan}
+
+TRANSCRIPT WITH PRIVATE SCORES:
+{transcript}
+
+MEASURED COVERAGE PER QUESTION (computed by the system, not by you):
+{coverage}
+
+REQUIREMENTS THE INTERVIEW MEASURED AS NOT DEMONSTRATED:
+{unmet_measured}

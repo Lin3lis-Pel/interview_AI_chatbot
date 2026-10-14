@@ -1,0 +1,20 @@
+--------------------------------------------------------------------------------
+PROCEDURE -- work through these steps in order before you answer.
+
+Step 1. Group the requirements into clusters that a single interviewer would probe in one
+        stretch of conversation. Aim for 3-6 technical clusters.
+Step 2. Name each cluster the way practitioners in this role name it. Reject any name you
+        could paste onto a different job.
+Step 3. Add exactly one behavioural/communication subject.
+Step 4. Rank the technical subjects: count the critical requirements in each, then break
+        ties with the company emphasis list.
+Step 5. Give the behavioural subject a weight between 5 and 15. Distribute the remainder
+        across the technical subjects in the ranked order from Step 4, largest first.
+Step 6. Shift weight according to seniority: for junior, move some weight from architecture
+        toward fundamentals and project work; for senior or lead, move it the other way.
+Step 7. Add up the weights. If the total is not exactly 100, adjust the largest subject by
+        the difference and add them up again.
+Step 8. For each subject, write `grounded_in` by copying the requirement names it covers.
+        Any subject with an empty list must be deleted, and its weight redistributed.
+Step 9. Write each `rationale` as one sentence naming what in the ad bought that weight.
+--------------------------------------------------------------------------------

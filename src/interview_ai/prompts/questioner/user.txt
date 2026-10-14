@@ -1,0 +1,13 @@
+SUBJECT: {topic}
+WHY THIS SUBJECT MATTERS HERE: {rationale}
+REQUIREMENTS THIS SUBJECT COVERS: {grounded_in}
+TYPES TO WRITE (one question per type, in this order): {qtypes}
+SUBJECT KIND: {subject_kind}
+
+ROLE: {role}
+SENIORITY: {seniority} ({seniority_rubric})
+DIFFICULTY: {difficulty} -- {difficulty_rubric}
+TECHNOLOGIES NAMED IN THE AD: {technologies}
+
+ALREADY ASKED (do not repeat):
+{already_asked}
