@@ -462,3 +462,8 @@ docs/                          Deeper architecture and evaluation notes
 
 For deeper implementation notes, see [`docs/architecture.md`](docs/architecture.md) and
 [`src/interview_ai/prompts/README.md`](src/interview_ai/prompts/README.md).
+
+## License
+
+[MIT](LICENSE). The assignment text in `115.md`, where present, belongs to Turing College and is not
+covered by this license.
